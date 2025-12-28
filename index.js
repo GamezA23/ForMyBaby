@@ -62,7 +62,7 @@ function goNext() {
   // ตรวจสอบว่าตรงกับ 29/11/2568
   if (day !== "29" || month !== "11" || year !== "2568") {
     alert("วัน/เดือน/ปี ยังไม่ถูกน๊า🥺");
-    return clearAll();
+    return;
   }
   const yearAD = parseInt(year) - 543;
   const date = `${yearAD}-${month}-${day}`;
@@ -70,4 +70,5 @@ function goNext() {
 }
 
 updateDisplay();
+
 
