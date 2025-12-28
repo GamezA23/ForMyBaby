@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #ffe0ec, #fff7fb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #444;
+}
+.card {
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 8px;
+}
+p {
+  margin-bottom: 20px;
+}
+
+.display {
+  font-size: 1.4rem;
+  letter-spacing: 6px;
+  background: #fff5fa;
+  border-radius: 15px;
+  padding: 12px 0;
+  margin-bottom: 20px;
+  border: 1px dashed #ffb6d5;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.keypad button {
+  padding: 14px 0;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 15px;
+  background: #ff8fbe;
+  color: #fff;
+  cursor: pointer;
+}
+.keypad button:hover {
+  background: #ff6faa;
+}
+
+.actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+}
+.actions button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.clear {
+  background: #ddd;
+}
+.go {
+  background: #ff5fa2;
+  color: #fff;
+}
+.go:hover {
+  background: #ff3d8b;
+}

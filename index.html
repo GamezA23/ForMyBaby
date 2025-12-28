@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For You Baby😍</title>
+  </head>
+  <link rel="stylesheet" href="index.css" />
+  <body>
+    <div id="yt-player" style="width: 0; height: 0; overflow: hidden"></div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <div class="card">
+      <h1>วันครบรอบของเรา 💖</h1>
+      <p>ใส่วันที่ เดือน และปี พ.ศ. ค้าบ💕</p>
+
+      <div id="display" class="display">**/**/****</div>
+
+      <div class="keypad">
+        <button onclick="add('1')">1</button>
+        <button onclick="add('2')">2</button>
+        <button onclick="add('3')">3</button>
+        <button onclick="add('4')">4</button>
+        <button onclick="add('5')">5</button>
+        <button onclick="add('6')">6</button>
+        <button onclick="add('7')">7</button>
+        <button onclick="add('8')">8</button>
+        <button onclick="add('9')">9</button>
+        <button onclick="add('')">🩷</button>
+        <button onclick="add('0')">0</button>
+        <button onclick="add('')">💛</button>
+      </div>
+
+      <div class="actions">
+        <button class="clear" onclick="clearAll()">เริ่มใหม่</button>
+        <button class="go" onclick="goNext()">กดตรงนี้ต่อ</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

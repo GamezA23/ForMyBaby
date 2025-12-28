@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #ffd6e8, #fff1f7);
+  color: #444;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ff3d8b;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.card {
+  background: #fff;
+  max-width: 500px; /* ปรับขนาดให้พอดีขึ้น */
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.heart {
+  font-size: 3rem;
+  animation: beat 1.2s infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background: #ff5fa2;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 95, 162, 0.3);
+}
+
+button:hover {
+  background: #ff3d8b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 61, 139, 0.4);
+}
+
+footer {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+#question-area button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+#question-area button:active {
+  transform: scale(0.9);
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
